@@ -31,6 +31,28 @@ EXPORT
 - Avoid generic AI-dashboard aesthetics.
 - Controls should feel like instruments in a type studio.
 
+## Processing vs. editing
+
+These are intentionally different experiences.
+
+### PROCESSING
+
+The interface becomes a small visual spectacle. A fluid hero object can morph continuously between typography, abstract forms, symbols, pixels, and 3D forms while the actual handwriting pipeline runs.
+
+The goal is not to make the user stare at a progress bar. The goal is to make waiting feel like part of the product.
+
+The animation should create curiosity: **“What is it going to become next?”**
+
+### EDITING
+
+The spectacle stops. The UI becomes calm, white, precise, and professional.
+
+Editing trails are restrained and functional. Pointer/stylus feedback should feel like a premium drawing instrument rather than a decorative effect.
+
+The contrast is intentional:
+
+> Magic while the machine works. Precision when the human takes over.
+
 ## Main studio layout
 
 ### Project rail
@@ -44,6 +66,81 @@ The center is the hero: handwriting samples, glyph specimen, or the selected gly
 ### Inspector
 
 Contextual controls on the right: geometry, spacing, baseline, weight, variants, and AI assistance.
+
+## Processing visual language
+
+The visual reference is gooey, fluid cursor interaction: clean UI surrounded by responsive liquid matter.
+
+The hero object should feel alive rather than like a conventional loader.
+
+Possible visual vocabulary:
+
+- Liquid trails.
+- Gel-like blobs.
+- Morphing typography.
+- Ink-like distortion.
+- Pixel disintegration/reassembly.
+- Low-poly / retro 3D moments.
+- Particles that behave as physical pieces.
+- Elastic motion and overshoot.
+- Edge collisions and rebounds.
+- Temporary forms that can leave the main hero area and return.
+
+A sequence may become a miniature animation story. For example:
+
+```text
+SPELL OUT
+  → liquid blob
+  → falls toward footer
+  → walks across the page
+  → hooks into an arc
+  → becomes a puddle
+  → reforms
+  → SPELL OUT
+```
+
+Another sequence could be:
+
+```text
+SPELL OUT
+  → explodes into four pieces
+  → pieces move independently
+  → pieces seek each other
+  → assemble
+  → bounce against viewport edges
+  → return to center
+  → next transformation
+```
+
+These are examples of a reusable language, not fixed animation requirements.
+
+## Morph principles
+
+### Real transformation over cuts
+
+Whenever possible, the viewer should perceive one continuous object becoming another.
+
+Avoid:
+
+```text
+fade out → unrelated asset appears
+```
+
+Prefer:
+
+```text
+shape stretches → geometry changes → material changes → new form resolves
+```
+
+### Behavior is reusable
+
+A blob should not be a special-case “blob animation.” It should be an object that can use shared behaviors such as fall, walk, bounce, split, merge, orbit, dissolve, or seek.
+
+This lets future forms and characters participate in the same visual language.
+
+### Surprise with restraint
+
+The animation should be memorable without becoming noisy. Long sequences need moments of stillness. The UI surrounding the hero remains quiet so the moving object has visual authority.
 
 ## Glyph editing
 
@@ -88,7 +185,7 @@ Important interactions:
 
 For direct drawing, the stroke should feel physically connected to the input. The interface should react to pressure/velocity information when available, while degrading gracefully for mouse and touch.
 
-The inspiration target is the feeling of handwriting interactions on modern touch interfaces: immediate, fluid, and quiet rather than a flashy animation layered on top.
+The processing hero uses a different motion language: fluid, elastic, cinematic, and surprising. The editor uses precise, immediate, low-amplitude feedback.
 
 ## Progressive effort
 
